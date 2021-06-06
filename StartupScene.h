@@ -7,12 +7,6 @@ class StartupScene : public Scene
 {
 private:
 	Texture* startupTexture;
-	tigl::VBO* kubusVbo;
-
-	float time;
-
-	int menuIndex;
-
 public:
 	StartupScene();
 

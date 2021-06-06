@@ -9,7 +9,7 @@ public:
 	FpsCam(GLFWwindow*);
 
 	glm::mat4 getMatrix();
-	void update(GLFWwindow* window, double* lastX, double* lastY, int* index);
+	void update(GLFWwindow*);
 
 private:
 	glm::vec3 position = glm::vec3(0, 0, 0);

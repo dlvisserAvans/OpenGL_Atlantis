@@ -13,125 +13,105 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Components">
-      <UniqueIdentifier>{5718ad1b-81de-4f91-ad4d-bef9dbcf98f3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Components\Header Files">
-      <UniqueIdentifier>{8c797685-5c04-412b-a7d8-75bd5fd8114a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Components\Source Files">
-      <UniqueIdentifier>{6571cd26-4d04-43d1-8ec1-2f8a96ee6a47}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="lib">
-      <UniqueIdentifier>{d37a1283-16cc-4131-bcc6-d877346f5c01}</UniqueIdentifier>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{6c479fa7-7221-4604-bfbc-f410df7ace50}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="tigl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StartupScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneIngame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_glfw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_opengl3.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenePause.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="FpsCam.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GameObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SpinComponent.cpp">
-      <Filter>Components\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MoveToComponent.cpp">
-      <Filter>Components\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerComponent.cpp">
-      <Filter>Components\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Component.cpp">
-      <Filter>Components\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TimerJumper.cpp">
-      <Filter>Components\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tigl.cpp">
-      <Filter>lib</Filter>
-    </ClCompile>
-    <ClCompile Include="CrosshairComponent.cpp">
-      <Filter>Components\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjectModelComponent.cpp">
-      <Filter>Components\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LetterModelComponent.cpp">
-      <Filter>Components\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CubeComponent.cpp">
-      <Filter>Components\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DrawComponent.cpp">
-      <Filter>Components\Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="tigl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StartupScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneIngame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_glfw.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_opengl3.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenePause.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FpsCam.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GameObject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SpinComponent.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MoveToComponent.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerComponent.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Component.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TimerJumper.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tigl.h">
-      <Filter>lib</Filter>
-    </ClInclude>
-    <ClInclude Include="CrosshairComponent.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LetterModelComponent.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjectModelComponent.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DrawComponent.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CubeComponent.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Images\closeHand.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Images\container.jpg">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Images\openHand.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Images\rainbow.jpg">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Images\shapes.png">
-      <Filter>Resource Files</Filter>
-    </Image>
   </ItemGroup>
 </Project>

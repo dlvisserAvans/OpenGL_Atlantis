@@ -13,8 +13,5 @@ enum class Scenes
 {
 	STARTUP,
 	INGAME,
-	SETTINGS,
-	CREDITS,
-	GAMEWON,
-	GAMEOVER
+	PAUSE
 };

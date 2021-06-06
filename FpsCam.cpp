@@ -9,6 +9,7 @@ FpsCam::FpsCam(GLFWwindow* window)
 		glfwSetInputMode(window, GLFW_RAW_MOUSE_MOTION, GLFW_TRUE);
 }
 
+
 glm::mat4 FpsCam::getMatrix()
 {
 	glm::mat4 ret(1.0f);
@@ -24,30 +25,28 @@ void FpsCam::move(float angle, float fac)
 	position.z += (float)sin(rotation.y + glm::radians(angle)) * fac;
 }
 
-void FpsCam::update(GLFWwindow* window, double* lastX, double* lastY, int* index)
+
+void FpsCam::update(GLFWwindow* window)
 {
-    double x, y;
-    glfwGetCursorPos(window, &x, &y);
+	double x, y;
+	glfwGetCursorPos(window, &x, &y);
 
-    rotation.x -= (float)(*lastY - y) / 100.0f;
-    rotation.y -= (float)(*lastX - x) / 100.0f;
+	static double lastX = x;
+	static double lastY = y;
 
-    *lastX = x;
-    *lastY = y;
+	rotation.x -= (float)(lastY - y) / 100.0f;
+	rotation.y -= (float)(lastX - x) / 100.0f;
 
-    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        move(0, 0.05f);
-    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        move(180, 0.05f);
-    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        move(90, 0.05f);
-    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        move(-90, 0.05f);
-    if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS) {};
-    if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) {};
+	lastX = x;
+	lastY = y;
 
-    if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
-        *index = 1;
-    if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
-        *index = 0;
+
+	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+		move(0, 0.05f);
+	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+		move(180, 0.05f);
+	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+		move(90, 0.05f);
+	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+		move(-90, 0.05f);
 }
