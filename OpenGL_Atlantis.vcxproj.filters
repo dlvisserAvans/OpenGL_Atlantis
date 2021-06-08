@@ -16,6 +16,15 @@
     <Filter Include="imgui">
       <UniqueIdentifier>{6c479fa7-7221-4604-bfbc-f410df7ace50}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{15cef98f-37d2-44a0-8407-91eb76d1917a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Header Files">
+      <UniqueIdentifier>{cf5c24e3-bae2-4503-b17c-9a69479a290f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Source Files">
+      <UniqueIdentifier>{f94309e3-2905-4e96-88d3-630e51938185}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tigl.cpp">
@@ -33,7 +42,7 @@
     <ClCompile Include="StartupScene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SceneIngame.cpp">
+    <ClCompile Include="InGameScene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="imgui.cpp">
@@ -63,6 +72,18 @@
     <ClCompile Include="FpsCam.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SkyboxComponent.cpp">
+      <Filter>Components\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Components\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawComponent.cpp">
+      <Filter>Components\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tigl.h">
@@ -80,7 +101,7 @@
     <ClInclude Include="StartupScene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SceneIngame.h">
+    <ClInclude Include="InGameScene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="imgui.h">
@@ -113,5 +134,37 @@
     <ClInclude Include="FpsCam.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SkyboxComponent.h">
+      <Filter>Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawComponent.h">
+      <Filter>Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\Users\Dave-\AppData\Local\Temp\Rar$DRa27204.7874\underwater\uw_bk.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\Users\Dave-\AppData\Local\Temp\Rar$DRa27204.7874\underwater\uw_dn.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\Users\Dave-\AppData\Local\Temp\Rar$DRa27204.7874\underwater\uw_ft.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\Users\Dave-\AppData\Local\Temp\Rar$DRa27204.7874\underwater\uw_lf.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\Users\Dave-\AppData\Local\Temp\Rar$DRa27204.7874\underwater\uw_rt.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\Users\Dave-\AppData\Local\Temp\Rar$DRa27204.7874\underwater\uw_up.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

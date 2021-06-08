@@ -4,7 +4,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include "Scene.h"
 #include "StartupScene.h"
-#include "SceneIngame.h"
+#include "InGameScene.h"
 #include "ScenePause.h"
 #include <map>
 #include "imgui.h"
@@ -74,9 +74,8 @@ void init()
                 glfwSetWindowShouldClose(window, true);
         });
 
-
     scenes[Scenes::STARTUP] = new StartupScene();
-    scenes[Scenes::INGAME] = new SceneIngame();
+    scenes[Scenes::INGAME] = new InGameScene();
     scenes[Scenes::PAUSE] = new ScenePause();
     currentScene = scenes[Scenes::STARTUP];
 }

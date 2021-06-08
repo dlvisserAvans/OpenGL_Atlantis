@@ -156,7 +156,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="DrawComponent.cpp" />
     <ClCompile Include="FpsCam.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="imgui.cpp" />
     <ClCompile Include="imgui_demo.cpp" />
     <ClCompile Include="imgui_draw.cpp" />
@@ -166,14 +169,18 @@
     <ClCompile Include="imgui_widgets.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="SceneIngame.cpp" />
+    <ClCompile Include="InGameScene.cpp" />
     <ClCompile Include="ScenePause.cpp" />
+    <ClCompile Include="SkyboxComponent.cpp" />
     <ClCompile Include="StartupScene.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="tigl.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="DrawComponent.h" />
     <ClInclude Include="FpsCam.h" />
+    <ClInclude Include="GameObject.h" />
     <ClInclude Include="imconfig.h" />
     <ClInclude Include="imgui.h" />
     <ClInclude Include="imgui_impl_glfw.h" />
@@ -183,12 +190,21 @@
     <ClInclude Include="imstb_textedit.h" />
     <ClInclude Include="imstb_truetype.h" />
     <ClInclude Include="Scene.h" />
-    <ClInclude Include="SceneIngame.h" />
+    <ClInclude Include="InGameScene.h" />
     <ClInclude Include="ScenePause.h" />
+    <ClInclude Include="SkyboxComponent.h" />
     <ClInclude Include="StartupScene.h" />
     <ClInclude Include="stb_image.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="tigl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\Users\Dave-\AppData\Local\Temp\Rar$DRa27204.7874\underwater\uw_bk.jpg" />
+    <Image Include="..\..\..\Users\Dave-\AppData\Local\Temp\Rar$DRa27204.7874\underwater\uw_dn.jpg" />
+    <Image Include="..\..\..\Users\Dave-\AppData\Local\Temp\Rar$DRa27204.7874\underwater\uw_ft.jpg" />
+    <Image Include="..\..\..\Users\Dave-\AppData\Local\Temp\Rar$DRa27204.7874\underwater\uw_lf.jpg" />
+    <Image Include="..\..\..\Users\Dave-\AppData\Local\Temp\Rar$DRa27204.7874\underwater\uw_rt.jpg" />
+    <Image Include="..\..\..\Users\Dave-\AppData\Local\Temp\Rar$DRa27204.7874\underwater\uw_up.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
