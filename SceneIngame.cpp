@@ -5,7 +5,7 @@
 #include <map>
 #include <thread>
 
-#include "InGameScene.h"
+#include "SceneInGame.h"
 #include "Texture.h"
 #include "tigl.h"
 #include "Scene.h"
@@ -20,7 +20,7 @@ FpsCam* camera;
 
 GameObject* backgroundBox;
 
-InGameScene::InGameScene()
+SceneInGame::SceneInGame()
 {
 	initSkyboxTextures();
 
@@ -71,7 +71,7 @@ InGameScene::InGameScene()
 	//camera = new FpsCam(window);
 }
 
-void InGameScene::draw()
+void SceneInGame::draw()
 {	
 	glClearColor(0.3f, 0.4f, 0.6f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -134,7 +134,7 @@ void InGameScene::draw()
 	//ImGui::End();
 }
 
-void InGameScene::onKey(int key, int scancode, int action, int mods)
+void SceneInGame::onKey(int key, int scancode, int action, int mods)
 {
 	/*if (key == GLFW_KEY_DOWN && action == GLFW_RELEASE)
 	{
@@ -142,7 +142,7 @@ void InGameScene::onKey(int key, int scancode, int action, int mods)
 	}*/
 }
 
-void InGameScene::update()
+void SceneInGame::update()
 {
 	if (glfwGetKey(window, GLFW_KEY_ENTER) == GLFW_PRESS)
 	{
@@ -154,11 +154,11 @@ void InGameScene::update()
 }
 
 
-void InGameScene::initSkyboxTextures(){
+void SceneInGame::initSkyboxTextures(){
 
 	textureSkybox[0] = new Texture("data/images/uw_ft.jpg"); //middle
-	textureSkybox[1] = new Texture("data/images/uw_lf.jpg"); //right
-	textureSkybox[2] = new Texture("data/images/uw_rt.jpg"); //left
+	textureSkybox[1] = new Texture("data/images/uw_rt.jpg"); //right
+	textureSkybox[2] = new Texture("data/images/uw_lf.jpg"); //left
 	textureSkybox[3] = new Texture("data/images/uw_bk.jpg"); //back
 	textureSkybox[4] = new Texture("data/images/uw_dn.jpg"); // bottom
 	textureSkybox[5] = new Texture("data/images/uw_up.jpg"); // top

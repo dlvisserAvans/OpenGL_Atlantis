@@ -169,10 +169,10 @@
     <ClCompile Include="imgui_widgets.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="InGameScene.cpp" />
+    <ClCompile Include="SceneIngame.cpp" />
     <ClCompile Include="ScenePause.cpp" />
     <ClCompile Include="SkyboxComponent.cpp" />
-    <ClCompile Include="StartupScene.cpp" />
+    <ClCompile Include="SceneStartup.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="tigl.cpp" />
   </ItemGroup>
@@ -190,10 +190,10 @@
     <ClInclude Include="imstb_textedit.h" />
     <ClInclude Include="imstb_truetype.h" />
     <ClInclude Include="Scene.h" />
-    <ClInclude Include="InGameScene.h" />
+    <ClInclude Include="SceneInGame.h" />
     <ClInclude Include="ScenePause.h" />
     <ClInclude Include="SkyboxComponent.h" />
-    <ClInclude Include="StartupScene.h" />
+    <ClInclude Include="SceneStartup.h" />
     <ClInclude Include="stb_image.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="tigl.h" />

@@ -3,18 +3,19 @@
 #include "tigl.h"
 #include <glm/gtc/matrix_transform.hpp>
 #include "Scene.h"
-#include "StartupScene.h"
-#include "InGameScene.h"
+#include "SceneStartup.h"
+#include "SceneInGame.h"
 #include "ScenePause.h"
 #include <map>
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
-using tigl::Vertex;
 
 #pragma comment(lib, "glfw3.lib")
 #pragma comment(lib, "glew32s.lib")
 #pragma comment(lib, "opengl32.lib")
+
+using tigl::Vertex;
 
 GLFWwindow* window;
 
@@ -74,8 +75,8 @@ void init()
                 glfwSetWindowShouldClose(window, true);
         });
 
-    scenes[Scenes::STARTUP] = new StartupScene();
-    scenes[Scenes::INGAME] = new InGameScene();
+    scenes[Scenes::STARTUP] = new SceneStartup();
+    scenes[Scenes::INGAME] = new SceneInGame();
     scenes[Scenes::PAUSE] = new ScenePause();
     currentScene = scenes[Scenes::STARTUP];
 }

@@ -3,12 +3,12 @@
 #include "tigl.h"
 class Texture;
 
-class StartupScene : public Scene
+class SceneStartup : public Scene
 {
 private:
 	Texture* startupTexture;
 public:
-	StartupScene();
+	SceneStartup();
 
 
 	virtual void draw() override;

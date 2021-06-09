@@ -1,4 +1,4 @@
-#include "StartupScene.h"
+#include "SceneStartup.h"
 #include "Texture.h"
 #include "tigl.h"
 #include <glm/gtc/matrix_transform.hpp>
@@ -11,12 +11,12 @@ extern std::map<Scenes, Scene*> scenes;
 extern Scene* currentScene;
 extern GLFWwindow* window;
 
-StartupScene::StartupScene()
+SceneStartup::SceneStartup()
 {
 	startupTexture = new Texture("data/startupScreen.png");
 }
 
-void StartupScene::draw()
+void SceneStartup::draw()
 {
 	tigl::shader->setProjectionMatrix(glm::ortho(-1.0f, 1.0f, -1.0f, 1.0f, -100.0f, 100.0f));
 	tigl::shader->setViewMatrix(glm::mat4(1.0f));
@@ -51,11 +51,11 @@ void StartupScene::draw()
 
 }
 
-void StartupScene::onKey(int key, int scancode, int action, int mods)
+void SceneStartup::onKey(int key, int scancode, int action, int mods)
 {
 }
 
-void StartupScene::update()
+void SceneStartup::update()
 {
 	if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
 	{

@@ -13,7 +13,6 @@ class SkyboxComponent : public DrawComponent{
 private:
 	std::vector<std::vector<Vertex>> verts;
 	float x = 0, y = 0, z = 0;
-	Texture* textureSkybox[6];
 
 public:
 	SkyboxComponent(float size, Texture** textures);

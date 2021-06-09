@@ -4,7 +4,7 @@
 #include "FpsCam.h"
 #include "Texture.h"
 
-class InGameScene :
+class SceneInGame :
     public Scene
 {
 private:
@@ -16,8 +16,8 @@ private:
     Texture* textureSkybox[6];
 
 public:
-    InGameScene();
-    ~InGameScene();
+    SceneInGame();
+    ~SceneInGame();
     void initSkyboxTextures();
     virtual void draw() override;
     virtual void update() override;
