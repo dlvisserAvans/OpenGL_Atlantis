@@ -27,7 +27,7 @@ int main(void)
 {
     if (!glfwInit())
         throw "Could not initialize glwf";
-    window = glfwCreateWindow(1400, 800, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(1400, 800, "OpgenGL Atlantis", NULL, NULL);
     if (!window)
     {
         glfwTerminate();

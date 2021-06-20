@@ -13,7 +13,7 @@ extern GLFWwindow* window;
 
 ScenePause::ScenePause()
 {
-	pauseTexture = new Texture("data/pauseScreen.png");
+	pauseTexture = new Texture("data/screens/pauseScreen.png");
 }
 
 void ScenePause::draw()

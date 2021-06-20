@@ -12,8 +12,11 @@ private:
     /*tigl::VBO* kubusVbo;
     float time;
     int menuIndex;*/
-
     Texture* textureSkybox[6];
+    void createFaunaModels();
+    void initShaderDrawing();
+    void buildupSkybox();
+    void drawModels();
 
 public:
     SceneInGame();

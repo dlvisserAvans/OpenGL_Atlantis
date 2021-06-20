@@ -13,7 +13,7 @@ extern GLFWwindow* window;
 
 SceneStartup::SceneStartup()
 {
-	startupTexture = new Texture("data/startupScreen.png");
+	startupTexture = new Texture("data/screens/startupScreen.png");
 }
 
 void SceneStartup::draw()
@@ -46,9 +46,6 @@ void SceneStartup::draw()
 
 	tigl::shader->enableLighting(false);
 	glDisable(GL_DEPTH_TEST);
-
-
-
 }
 
 void SceneStartup::onKey(int key, int scancode, int action, int mods)
